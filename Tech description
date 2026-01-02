@@ -1,0 +1,30 @@
+messages
+- id
+- order_id
+- sender_id
+- content
+- created_at
+orders
+- id
+- gig_id
+- client_id
+- freelancer_id
+- status (PENDING, PAID, DELIVERED, COMPLETED)
+transactions
+- id
+- order_id
+- amount
+- type (escrow, payout, fee, withdrawal)
+gigs
+- id
+- freelancer_id
+- title
+- price
+- delivery_days
+users
+- id (uuid)
+- email
+- password_hash
+- role (client | freelancer | admin)
+- wallet_balance
+- created_at
